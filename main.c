@@ -31,12 +31,18 @@ int mode;
 int saisie_mode;
 
     //1. Boucle de sécurité pour le choix du mode
-    do {
-        printf(CYAN "1. Mode Standard (Classique)\n" RESET);
-        printf(CYAN "2. Mode Personnalisé\n" RESET);
-        printf("Choix : ");
-        saisie_mode = scanf("%d", &mode);
 
+//1. Boucle de sécurité pour le choix du mode
+    do {
+        printf(CYAN "===========================================\n" RESET);
+        printf(CYAN " 🎲 BIENVENUE DANS LE JEU FLIPTECH ! 😀   \n" RESET);
+        printf(CYAN "===========================================\n\n" RESET);
+
+        printf("  " VERT "[1]" RESET " Mode Standard (Classique)\n");
+        printf("  " VERT "[2]" RESET " Mode Personnalisé\n\n");
+
+        printf(JAUNE "Votre choix : " RESET);
+        saisie_mode = scanf("%d", &mode);
         
         if (saisie_mode != 1) {
             printf(ROUGE "Erreur : Veuillez entrer un chiffre (1 ou 2) !\n\n" RESET);
@@ -60,25 +66,24 @@ int saisie_mode;
     //2.  On passe la bonne taille au mélange !
     melanger_paquet(paquet, maConfig.nb_total_cartes);
 
+    // Code désactivé : affichage du paquet de mélange si souhaité 
+/*
     // 3. Affichage du paquet mélangé
     printf(VIOLET "Paquet de cartes mélangé :\n" RESET);
-    for (int i = 0; i < maConfig.nb_total_cartes; i++) {
+   
+      for (int i = 0; i < maConfig.nb_total_cartes; i++) {
         printf("%s (Type: %d, Valeur: %d)\n", paquet[i].nom, paquet[i].type, paquet[i].valeur);
-    }
+    }  */   
 
     //---2ème étape : on configure la partie : nombre de joueurs, leurs noms, leurs scores ---
 
 
-//1.Message de bienvenue 
-    int nb_joueurs;
-printf(CYAN "---------------------------------------------------\n\n" RESET);
+ 
+   
 
-printf ("  🎲 BIENVENUE DANS LE JEU FLIPTECH ! 😀\n\n"); 
 
-printf(CYAN "---------------------------------------------------\n\n" RESET);
-
-// 2.On demande le nombre de joueurs et on vérifie que c'est un nombre valide et au moins 2 joueurs
-
+// 1.On demande le nombre de joueurs et on vérifie que c'est un nombre valide et au moins 2 joueurs
+int nb_joueurs;
 int saisie_valide;
 do {
     printf("Entrez le nombre de joueurs (ex: 3) : ");
@@ -100,11 +105,11 @@ Joueur joueurs[nb_joueurs]; // On crée le tableau
 
 
 
-    // 3.Appel de ta fonction pour initialiser les joueurs
+    // 2.Appel de ta fonction pour initialiser les joueurs
     initialiser_joueurs(joueurs, nb_joueurs);
 
 
-    //4. Initialisation du tableau de statistiques des cartes piochées
+    //3. Initialisation du tableau de statistiques des cartes piochées
     int stats_cartes[13] = {0};
 
 
@@ -168,10 +173,19 @@ if (index_pioche >= maConfig.nb_total_cartes) {
                    
                    
   // 7.C'est un humain, on lui demande de faire son choix entre piocher, s'arrêter ou voir les statistiques
-    int saisie;
+  int saisie;
+   
     do {
-        printf(VIOLET "▶ C'est au tour de %s !\n" RESET, joueurs[i].nom);
-        printf(CYAN "Choix :" RESET " 1=Piocher une carte, 2= s'arrêter, 3= Voir statistiques \n" JAUNE "Choix du joueur: " RESET);
+        printf(VIOLET "────────────────────────────────────────\n" RESET);
+        printf(VIOLET "▶ C'EST AU TOUR DE %s !\n" RESET, joueurs[i].nom);
+        printf(VIOLET "────────────────────────────────────────\n\n" RESET);
+
+        printf(CYAN "Que voulez-vous faire ?\n" RESET);
+        printf("  " VERT "[1]" RESET " Piocher une carte\n");
+        printf("  " VERT "[2]" RESET " S'arreter pour cette manche\n");
+        printf("  " VERT "[3]" RESET " Voir vos statistiques actuelles\n\n");
+
+        printf(JAUNE "Votre choix : " RESET);
         saisie = scanf("%d", &choix);
 
         //Pour sécurité
@@ -263,10 +277,10 @@ if (index_pioche >= maConfig.nb_total_cartes) {
             gagnant = i;
         }
     }
-printf(VERT "-------------------------🥇 Le Vainqueur de la partie 🥇--------------------------\n" RESET);
+printf(VERT "-------------------------🥇 Le Vainqueur de la partie 🥇-------------------------\n" RESET);
 printf(VERT "\n🏆 Le gagnant de la partie est %s avec un score de "JAUNE" %d points ! 🏆\n" RESET, joueurs[gagnant].nom, joueurs[gagnant].score_partie);
 
-printf(VERT "-----------------------------------------------------------------------------------\n" RESET);
+printf(VERT "---------------------------------------------------------------------------------\n" RESET);
 
     //  Affichage des scores des autres joueurs 
 
@@ -278,7 +292,7 @@ printf(VERT "-------------------------------------------------------------------
             printf("- %s : " JAUNE "%d points\n" RESET, joueurs[i].nom, joueurs[i].score_partie);
         }
     }
-printf(CYAN "---------------------------------------------------------------------------------\n" RESET);
+printf(CYAN "--------------------------------------------------------------------------------\n" RESET);
 
 
     // ---5ème étape : Sauvegarde des scores dans un fichier texte --- 
