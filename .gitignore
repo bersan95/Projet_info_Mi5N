@@ -1,0 +1,10 @@
+git rm --cached *.o
+git rm --cached fliptech
+git rm --cached fliptech.exe
+git commit -m "Enlever les fichiers compiles de GitHub"
+git push
+
+
+
+
+
