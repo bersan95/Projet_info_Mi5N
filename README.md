@@ -13,7 +13,7 @@ Le projet est modulé et structuré autour des fichiers suivants :
 - affichage.c   : Interface utilisateur, statistiques et résultats.
 - ordinateur.c  : Création d'un ou des bots pour les parties solo/mixtes.
 - sauvegarde.c  : Exportation des scores de fin de partie.
-- makefile      : Pour compilation automatisée.
+- makefile      : Pour compilation automatique.
 
 
  ## Compilation 
