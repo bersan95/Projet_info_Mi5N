@@ -16,15 +16,14 @@ Le projet est modulé et structuré autour des fichiers suivants :
 - makefile      : Pour compilation automatisée.
 
 
-  ## Compilation 
+ ## Compilation 
 
   Pour le gcc :   gcc main.c cartes.c deroulement.c sauvegarde.c affichage.c ordinateur.c -o fliptech
 
   Sinon compilation automatique avec la commande :  make
 
 
-
-  ## EXECUTION
+## EXECUTION
 Une fois la compilation terminée, l'exécutable 'fliptech' est généré. Lancez le jeu avec la commande suivante :
 
 - Sous Linux / macOS :
@@ -38,7 +37,6 @@ Une fois la compilation terminée, l'exécutable 'fliptech' est généré. Lance
 Pour nettoyer votre dossier et supprimer les fichiers objets (.o) ainsi que l'exécutable générés lors de la compilation, utilisez la commande : 
 
 make clean
-
 
 
 
