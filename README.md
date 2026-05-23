@@ -27,9 +27,11 @@ Le projet est modulé et structuré autour des fichiers suivants :
 Une fois la compilation terminée, l'exécutable 'fliptech' est généré. Lancez le jeu avec la commande suivante :
 
 - Sous Linux / macOS :
+  
    ./fliptech
 
 - Sous Windows :
+  
   .\fliptech
 
 
