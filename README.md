@@ -49,10 +49,10 @@ make clean
 ## UTILISATION ET FONCTIONNALITÉS
 Toute la configuration se fait de manière interactive et sécurisée au lancement :
 
-1. Configuration de la partie : Choix entre le mode Standard (20 minutes, 94 cartes= 85 cartes numérotées+6 cartes bonus+ 9 cartes spéiales ) ou le mode Personnalisé (durée et cartes numéros ajustables ).
+1. Configuration de la partie : Choix entre le mode Standard (20 minutes, 94 cartes= 85 cartes numérotées+6 cartes bonus+9 cartes spéiales ) ou le mode Personnalisé (durée et cartes numéros ajustables).
 2. Paramétrage des joueurs : Saisie du nombre de joueurs, les pseudos et possibilité d'ajouter des ordinateurs (Bots).
 3. Déroulement d'un tour : Saisir 1 pour piocher, 2 pour vous arrêter, ou 3 pour consulter  les cartes que vous possèdées et vos statistiques
-4. Fin de partie : Le classement s'affiche automatiquement (par le tri à bulles) et propose de sauvegader les résultats dans un fichier texte au choix par oui ou non .Si oui , saisir le nom du fichier 
+4. Fin de partie : Le classement s'affiche automatiquement (par le tri à bulles) et propose de sauvegader les résultats dans un fichier texte au choix par oui ou non .Si oui , saisir le nom du fichier.
 
 
   
