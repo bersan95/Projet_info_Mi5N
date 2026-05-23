@@ -18,19 +18,17 @@ Le projet est modulé et structuré autour des fichiers suivants :
 
  ## Compilation 
 
-  Pour le gcc :   gcc main.c cartes.c deroulement.c sauvegarde.c affichage.c ordinateur.c -o fliptech
+  Pour le gcc :      gcc main.c cartes.c deroulement.c sauvegarde.c affichage.c ordinateur.c -o fliptech
 
-  Sinon compilation automatique avec la commande :  make
+  Sinon compilation automatique avec la commande :     make
 
 
 ## EXECUTION
 Une fois la compilation terminée, l'exécutable 'fliptech' est généré. Lancez le jeu avec la commande suivante :
 
-- Sous Linux / macOS :
-  ./fliptech
+- Sous Linux / macOS :    ./fliptech
 
-- Sous Windows :
-  .\fliptech
+- Sous Windows :          .\fliptech
 
 
 ## NETTOYAGE
