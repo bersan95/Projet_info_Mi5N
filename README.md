@@ -18,11 +18,11 @@ Le projet est modulé et structuré autour des fichiers suivants :
 
  ## Compilation 
 
-  -Par la saisie manuelle avec le gcc :     
+- Par la saisie manuelle avec le gcc :     
   
   gcc main.c cartes.c deroulement.c sauvegarde.c affichage.c ordinateur.c -o fliptech
 
-  -Sinon compilation automatique avec la commande :    
+-Sinon compilation automatique avec la commande :    
   
   make
 
