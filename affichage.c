@@ -44,7 +44,7 @@ void afficher_resultats_manche(Joueur joueurs[], int nb_joueurs) {
     printf(CYAN "\n----- 🏁 RESULTATS DE LA MANCHE  🏁 ------\n" RESET);
     for (int i = 0; i < nb_joueurs; i++) {
         if(joueurs[i].a_perdu_manche == false) {
-            //1. On multiplie d'abord les points des numéros, puis on ajoute les bonus [+]
+            //1. On multiplie d'abord les points des numéros, puis on ajoute les bonus 
             joueurs[i].score_manche = (joueurs[i].score_manche * joueurs[i].multiplicateur) + joueurs[i].bonus_addition;
 
             //2. On ajoute les 15 points après la multiplication 
