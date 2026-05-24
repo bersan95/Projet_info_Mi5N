@@ -92,9 +92,9 @@ void sauvegarder_scores(Joueur joueurs[], int nb_joueurs);
 void reinitialiser_pour_nouvelle_manche(Joueur joueurs[], int nb_joueurs);
 
 
-// --- 4ème étape : les couleurs et emojis pour rendre le jeu plus fun ! --- 
+// --- 4ème étape : les couleurs  --- 
 
-//1. Les couleurs et emojis (Terminal ANSI) 
+//1. Les couleurs  (Terminal ANSI) 
 #define RESET   "\033[0m"
 #define ROUGE   "\033[1;31m"
 #define VERT    "\033[1;32m"
