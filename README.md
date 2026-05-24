@@ -2,7 +2,7 @@
 -----------------------------------
 Groupe:MI5_N
 
-Auteurs : Bersan Sayhan et Ould el mochtar Iman
+Auteurs : Sayhan Bersan et Ould el mochtar Iman
 
 ## FICHIERS INCLUS
 Le projet est modulé et structuré autour des fichiers suivants :
