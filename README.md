@@ -40,7 +40,7 @@ Une fois la compilation terminée, l'exécutable 'fliptech' est généré. Lance
 
 
 ## NETTOYAGE
--Pour nettoyer votre dossier et supprimer les fichiers objets (.o) ainsi que l'exécutable générés lors de la compilation, utilisez la commande : 
+- Pour nettoyer votre dossier et supprimer les fichiers objets (.o) ainsi que l'exécutable générés lors de la compilation, utilisez la commande : 
 
 make clean
 
