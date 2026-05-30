@@ -284,7 +284,7 @@ if (index_pioche >= maConfig.nb_total_cartes) {
     int gagnant = 0;
     //code désactivé : autre moyens pour determiner le gagnant 
 /*
-   int max = -1,
+   int max = -1;
 
     for (int i = 0; i < nb_joueurs; i++) {
         if (joueurs[i].score_partie > max) {
