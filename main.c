@@ -178,7 +178,7 @@ if (index_pioche >= maConfig.nb_total_cartes) {
                     if (temps_restant > 0) {
                         printf(CYAN "\n⏳ Temps restant : %02d:%02d\n" RESET, min_restantes, sec_restantes);
                     } else {
-                        printf(ROUGE "\n⏳ Le temps est ecoule ! Derniere chance !\n" RESET);
+                        printf(ROUGE "\n⏳ Le temps est ecoule ! \n" RESET);
                     }
                     
 
