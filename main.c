@@ -281,7 +281,10 @@ if (index_pioche >= maConfig.nb_total_cartes) {
 
 
     //2. On détermine le gagnant (le joueur avec le score de partie le plus élevé) et on affiche un message de félicitations, ainsi que les scores des autres joueurs pour le suspense !
-    int max = -1, gagnant = 0;
+    int gagnant = 0;
+    //code désactivé : autre moyens pour determiner le gagnant 
+/*
+   int max = -1,
 
     for (int i = 0; i < nb_joueurs; i++) {
         if (joueurs[i].score_partie > max) {
@@ -289,6 +292,7 @@ if (index_pioche >= maConfig.nb_total_cartes) {
             gagnant = i;
         }
     }
+        */
 printf(VERT "-------------------------🥇 Le Vainqueur de la partie 🥇-------------------------\n" RESET);
 printf(VERT "\n🏆 Le gagnant de la partie est %s avec un score de "JAUNE" %d points ! 🏆\n" RESET, joueurs[gagnant].nom, joueurs[gagnant].score_partie);
 
