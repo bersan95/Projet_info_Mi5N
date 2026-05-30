@@ -59,7 +59,7 @@ typedef struct {
            
     } Joueur ;
 
-    //---3ème étape : On annonce les fonctions pour gérer le jeu dans les autres fichiers .c (moteur_jeu.c, Cartes.c) et éviter les erreurs de compilation dues à des fonctions non déclarées.---
+    //---3ème étape : On annonce les fonctions pour gérer le jeu dans les autres fichiers .c (deroulement.c, Cartes.c) et éviter les erreurs de compilation dues à des fonctions non déclarées.---
 
 //1. Les Prototypes : Annonce des fonctions pour gérer le jeu
 void initialiser_paquet(Carte paquet[]);
