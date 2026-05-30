@@ -4,7 +4,7 @@ CFLAGS = -Wall -Wextra -g
 TARGET = fliptech
 
 # 2. Je liste les sources (.c) pour générer la liste des objets (.o).
-# 2. Je liste les sources (.c) pour générer la liste des objets (.o).
+
 SRCS = main.c cartes.c deroulement.c sauvegarde.c affichage.c ordinateur.c
 OBJS = $(SRCS:.c=.o)
 
