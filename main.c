@@ -60,7 +60,7 @@ int saisie_mode;
     } else {
         initialiser_paquet(paquet);
         maConfig.temps_limite_secondes = DUREE_MANCHE ; // 20 minutes par defaut 
-        maConfig.nb_total_cartes = 94; // Taille classique
+        maConfig.nb_total_cartes =  TOTAL_CARTES  ; // Taille classique
     }
 
     //2.  On passe la bonne taille au mélange !
