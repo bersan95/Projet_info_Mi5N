@@ -323,7 +323,7 @@ void jouer_tour(Joueur joueurs[], int nb_joueurs, int i, Carte paquet[], int *in
 void verifier_fin_partie(Joueur joueurs[], int nb_joueurs, double temps_ecoule, ConfigurerPartie maConfig, int index_pioche, bool *fin_de_partie) {
     bool joueur_a_gagne = false;
     for (int i = 0; i < nb_joueurs; i++) {
-        if (joueurs[i].score_partie >= 200) {
+        if (joueurs[i].score_partie >= SCORE_VICTOIRE ) {
             printf(VERT "🏆 Félicitations %s  🏆 ! Tu as atteint 200 points et gagné la partie ! 🏆\n" RESET, joueurs[i].nom);
             joueur_a_gagne = true;
             break;
