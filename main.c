@@ -32,7 +32,7 @@ int saisie_mode;
 
     //1. Boucle de sécurité pour le choix du mode
 
-//1. Boucle de sécurité pour le choix du mode
+
     do {
         printf(CYAN "===========================================\n" RESET);
         printf(CYAN " 🎲 BIENVENUE DANS LE JEU FLIPTECH ! 😀   \n" RESET);
